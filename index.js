@@ -77,40 +77,68 @@ console.log("no")
 
 //template literals (normal string is "" while template literal ``)
 
-
-let toluBirthyear = 1992
-
-console.log(`His age is 2033 - toluBirthYear`)
-
-if (ageTolu < 3) {
-    console.log("yes")
-    }
-    else if (ageTolu === 5) {
-    console.log("not sure")
-    }
-
-
-//create a function that can calculate a users age from his/her birth year, and then the function console logs a string that that the user "name", "address" with the calculated. And the function should also log if the user is old enough to register - (if the user is older than 18)
+//create a function that can calculate a users
+// age from his/her birth year, and then the function console 
+//logs a string that that the user "name", "address" with the calculated. And the function should also log if the user is old enough to register - (if the user is older than 18)
 
 let obj = {
 name: "Tolu",
 address: "Mapple",
-birthYear: 2009,
-}
-
-const engine = function (obj) {console.log(`his name is ${obj.name}
-and his age is ${2023 - obj.birthYear}.`)
-
- if (obj.birthYear > 18) {
-    console.log("He is old enough to register")
-    }
-    else if (obj.birthYear < 18) {
-    console.log("This user is not old enough to register")
-    }
+birthYear: 2008, 
+dadBirthYear: 1960,
+mumBirthYear: 1965,
 
 }
+
+
+
+ const engine = function (obj) {
+    
+    
+    let 
+      age = 2023 - obj.birthYear    
+    /* decision = "if (age > 18)('he's able to register')
+    else if( age < 18) ("he's unable to register") " */
+     
+
+
+
+     console.log(`${obj.name} lives in ${obj.address} with his parents, a ${2023 - obj.dadBirthYear} year old man and a ${2023 - obj.mumBirthYear} year old woman. ${obj.name} himself was born ${2023 - age} and `)
+} 
+  
+
 
 engine(obj)
 
 
 "His name is Tolu and his age is 30. He is old enough to register"
+
+
+
+
+
+/// --------- second assesement
+let
+//------ marks mass and height
+
+massMark = 78,
+heightMark = 1.69,
+BmiMark = massMark * 2/heightMark,
+
+
+// -----Johns mass and height
+
+massJohn = 92,
+heightJohn = 1.95, 
+BmiJohn = massJohn * 2/heightJohn
+
+//BmiMark > || or < BmiJohn
+    if (BmiMark > BmiJohn) {
+    console.log("BMI{Body Mass Index} of Mark is greater than John's")
+    }
+    else if (BmiMark < BmiJohn) {
+    console.log("BMI{Body Mass Index} of Johm is greater than Marks")
+    }
+
+
+
